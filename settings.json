@@ -1,0 +1,87 @@
+{
+    "Version" : "0.5",
+    "InProduction" : "NO",
+    "Timestamp" : "2017/11/16",
+    "CristieCube" : [
+        {
+            "useCristieCube" : "No",
+            "cubeTcpAddress" : "cube.corp.com",
+            "cubeTcpPort" : "443",
+            "cubeApiKey" : "abcdefgh-1234-5678-abcd-efghijklmnop"
+        }
+    ],
+    "IspServerSettings" : [
+        {
+            "tcpServerAddress" : "isp.corp.com",
+            "tcpPort" : "1500",
+            "sslEncryption" : "No",
+            "sslPort" : "1543"
+        },
+        {
+            "ocAddress" : "oc.corp.com",
+            "ocHttpsPort" :  "11090"
+        }
+    ],
+    "NodeSettings" : [
+        {
+            "useOnlyHostname" : "Yes",
+            "nodeExtension" : "DOMAIN-",
+            "extensionBeforeAfter" : "Before",
+            "generatePassword" : "Yes",
+            "staticPassword" : "Passw0rdCl3rT3xt"
+        },
+        {
+            "exchExtension" : "_EXC",
+            "sqlExtension" : "_SQL"
+        }
+    ],
+    "ClientServices" : [
+        {
+            "baCadService" : "TSM Client Acceptor",
+            "baSchedService" : "TSM Client Scheduler",
+            "baRemoteService" : "TSM Remote Client Agent"
+        },
+        {
+            "exchCadService" : "TSM Exchange Acceptor",
+            "exchSchedService" : "TSM Exchange Scheduler"
+        },
+        {
+            "sqlCadService" : "TSM MSSQL Acceptor",
+            "sqlSchedService" : "TSM MSSQL Scheduler"
+        }
+    ],
+    "ConfigurationFiles" : [
+        {
+            "optFilePath" : "Config",
+            "baDsmOpt" : "ba_dsm.opt",
+            "exchDsmOpt" : "exch_dsm.opt",
+            "sqlDsmOpt" : "sql_dsm.opt"
+        }
+    ],
+    "BaClientDownload" : [
+        {
+            "fileName" : "8.1.0.2-TIV-TSMBAC-WinX64.exe",
+            "description" : "IBM Spectrum Protect Backup-Archive Client for Windows",
+            "version" : "8.1.0.2",
+            "minimumOSLevel" : "Windows Server 2008 R2",
+            "fileURL" : "ftp://ftp.software.ibm.com/storage/tivoli-storage-management/patches/client/v8r1/Windows/x64/v810/8.1.0.2-TIV-TSMBAC-WinX64.exe"
+        },
+        {
+            "fileName" : "8.1.2.0-TIV-TSMBAC-WinX64.exe",
+            "description" : "IBM Spectrum Protect Backup-Archive Client for Windows",
+            "version" : "8.1.2.0",
+            "minimumOSLevel" : "Windows Server 2008 R2",
+            "fileURL" : "ftp://ftp.software.ibm.com/storage/tivoli-storage-management/maintenance/client/v8r1/Windows/x64/v812/8.1.2.0-TIV-TSMBAC-WinX64.exe"
+        }
+    ],
+    "ProductNames" : [
+        {
+            "ISP": "IBM Spectrum Protect",
+            "BAC": "Backup-Archive Client",
+            "DP": "Data Protection For",
+            "SQL": "Microsoft SQL Server",
+            "EXCH": "Microsoft Exchange Server",
+            "TBMR": "Cristie TBMR"
+        }
+    ]
+}
