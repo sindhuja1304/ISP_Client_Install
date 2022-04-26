@@ -143,11 +143,7 @@ Function Install-BaClient {
         }
 }
 
-Function Register-Node {
-    Write-Output " "
-    Write-Output " "
-    # This will be fix in a letar version with direct access to the Rest Interface.
-}
+
 
 Function Config-BAClient {
     $BaClientInstallPath = (Get-ItemProperty -Path "HKLM:\SOFTWARE\IBM\ADSM\CurrentVersion" -Name TSMClientPath).TSMClientPath
