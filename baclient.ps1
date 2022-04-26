@@ -105,12 +105,15 @@ Function Install-BaClient {
         Write-Output ""
         $vcredistX86 = "vcredist_x86.exe"
         $vcredistX64 = "vcredist_x64.exe"
+        $vc_redistX64 = "vc_redist.x64.exe"
+        
+        
 
         # Future we need to create a for loop here instead to check if files even exist
         # $vcredistPath = @("{270b0954-35ca-4324-bbc6-ba5db9072dad}", "{BF2F04CD-3D1F-444e-8960-D08EBD285C3F}")
         $job1 = "$BaInstPath\ISSetupPrerequisites\{270b0954-35ca-4324-bbc6-ba5db9072dad}\$vcredistX86"
         $job2 = "$BaInstPath\ISSetupPrerequisites\{BF2F04CD-3D1F-444e-8960-D08EBD285C3F}\$vcredistX86"
-        $job3 = "$BaInstPath\ISSetupPrerequisites\{7f66a156-bc3b-479d-9703-65db354235cc}\$vcredistX64"
+        $job3 = "$BaInstPath\ISSetupPrerequisites\{915387C3-E260-4985-861D-E7A891A4F74B}\$vc_redistX64"
         $job4 = "$BaInstPath\ISSetupPrerequisites\{3A3AF437-A9CD-472f-9BC9-8EEDD7505A02}\$vcredistX64"
         $Arguments = "/install /quiet /norestart /log vcredist.log"
 
